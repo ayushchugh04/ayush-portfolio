@@ -1,0 +1,271 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  transition: all 0.3s;
+}
+
+.dark {
+  background-color: #111;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid white;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Home Section */
+.home-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-btn, .outline-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.outline-btn {
+  background: none;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.primary-btn:hover, .outline-btn:hover {
+  opacity: 0.8;
+}
+
+/* Project Section */
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.project-card {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.dark .project-card {
+  background-color: #222;
+  color: white;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-card {
+  margin-top: 20px;
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: #eee;
+  color: #333;
+}
+
+.dark .footer {
+  background: #111;
+  color: white;
+}
+/* About Section */
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.dark .about-card {
+  background-color: #222;
+  color: white;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+/* Skills Section */
+.skills-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.dark .skills-card {
+  background-color: #222;
+  color: white;
+}
+
+.skills-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
