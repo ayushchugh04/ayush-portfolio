@@ -1,0 +1,101 @@
+/* Navbar - General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f9fa; /* Light mode background */
+  color: #000; /* Light mode text color */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease; /* Smooth transition for dark mode toggle */
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000; /* Light mode text color */
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  border-bottom: 2px solid #000; /* Border color on hover for light mode */
+}
+
+.nav-links li.active a {
+  color: #007bff;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.resume-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #000; /* Light mode toggle icon color */
+}
+
+/* Dark Mode - Apply styles when 'dark' class is present */
+.navbar.dark {
+  background-color: #333; /* Dark mode background */
+  color: white;
+}
+
+.navbar.dark .logo {
+  color: white; /* Dark mode logo color */
+}
+
+.navbar.dark .nav-links li a {
+  color: white; /* Dark mode text color for nav links */
+}
+
+.navbar.dark .nav-links li a:hover {
+  border-bottom: 2px solid white; /* Hover border for dark mode */
+}
+
+.navbar.dark .nav-links li.active a {
+  color: #ff9800; /* Active link color in dark mode */
+}
+
+.navbar.dark .navbar-actions .resume-btn {
+  background-color: #444; /* Dark mode button background */
+  color: white;
+}
+
+.navbar.dark .toggle-btn {
+  color: white; /* Dark mode toggle icon color */
+}
+
+/* Resume Button Hover - Light mode */
+.resume-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dark mode resume button hover */
+.navbar.dark .resume-btn:hover {
+  background-color: #555;
+}

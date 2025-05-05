@@ -1,0 +1,43 @@
+/* Ensure the background of the page is grey */
+body {
+  background-color: #f7e7ce; /* Grey background */
+  margin: 0;
+  padding: 0;
+}
+
+/* About section styling */
+.about-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About card */
+.about-card {
+  background-color: #f1f1f1; /* Light background for the card */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Dark mode styling for the about card */
+body.dark .about-card {
+  background-color: #222; /* Dark background for the card in dark mode */
+  color: white;
+}
+
+/* About card heading */
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* About card paragraph */
+.about-card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

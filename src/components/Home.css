@@ -1,0 +1,112 @@
+/* Ensure the background of the page is grey */
+body {
+  background-color: #f7e7ce; /* Grey background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Home section styling */
+.home-section {
+  padding: 100px 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7e7ce; /* Grey background specific to the home section */
+}
+
+/* Home content area */
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1000px;
+}
+
+/* Text area in home section */
+.text-area {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-area h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.text-area h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Buttons in home section */
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.primary-btn,
+.outline-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.outline-btn {
+  background: none;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.primary-btn:hover,
+.outline-btn:hover {
+  opacity: 0.85;
+}
+
+/* Profile Picture Styling */
+.photo-area {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Dark mode */
+body.dark .home-section {
+  background-color: #222; /* Dark background for the home section in dark mode */
+}
+
+body.dark .text-area h1,
+body.dark .text-area h2 {
+  color: white; /* White text for the heading in dark mode */
+}
+
+body.dark .primary-btn,
+body.dark .outline-btn {
+  background-color: #444; /* Button background color in dark mode */
+  color: white;
+}
+
+body.dark .profile-pic {
+  border: 5px solid #444; /* Darker border for profile pic in dark mode */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Adjusted shadow for dark mode */
+}

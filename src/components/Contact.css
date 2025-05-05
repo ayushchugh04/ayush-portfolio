@@ -1,0 +1,91 @@
+.contact-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f7e7ce; /* Background you asked for */
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+  }
+  
+  .info-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .info-item .icon {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .info-item a {
+    text-decoration: none;
+    color: #007bff;
+    word-break: break-word;
+  }
+  
+  .info-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .thankyou-msg {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #444;
+    font-style: italic;
+  }
+  
+  /* Dark mode */
+  body.dark .contact-card {
+    background-color: #222;
+    color: white;
+  }
+  
+  body.dark .info-item .icon {
+    color: #66afe9;
+  }
+  
+  body.dark .info-item a {
+    color: #66afe9;
+  }
+  
+  body.dark .thankyou-msg {
+    color: #aaa;
+  }
+  
