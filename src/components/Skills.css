@@ -1,38 +1,53 @@
+/* Skills Section Styling */
 .skills-section {
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card {
+  background-color: #f1f1f1;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+.dark .skills-card {
+  background-color: #222;
+  color: white;
+}
+
+.skills-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design for Skills Card */
+@media (max-width: 768px) {
   .skills-card {
-    background-color: #f1f1f1;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
+    padding: 20px; /* Adjust padding on smaller screens */
   }
-  
-  .dark .skills-card {
-    background-color: #222;
-    color: white;
-  }
-  
+
   .skills-card h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Adjust heading size on smaller screens */
   }
-  
-  .skills-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
+
   .skills-list li {
-    margin-bottom: 10px;
+    font-size: 1.1rem; /* Slightly smaller font size for skills list items */
   }
-  
+}

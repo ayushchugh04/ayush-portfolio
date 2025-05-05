@@ -1,10 +1,11 @@
 .certificates {
   padding: 50px 20px;
   text-align: center;
-  background-color:	#f7e7ce !important; /* Darker grey */
+  background-color: #f7e7ce !important; /* Grey background */
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .certificates h2 {
@@ -22,21 +23,23 @@
   background-color: #f1f1f1;
   padding: 20px;
   border-radius: 12px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.dark .certificate-card {
-  background-color: #222;
-  color: white;
-}
-
-.dark .certificates {
-  background-color: 	#f7e7ce !important;
 }
 
 .certificate-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode */
+body.dark .certificate-card {
+  background-color: #222;
+  color: white;
+}
+
+body.dark .certificates {
+  background-color: #f7e7ce !important;
 }
 
 .certificate-card a {
@@ -47,4 +50,20 @@
 
 .certificate-card a:hover {
   text-decoration: underline;
+}
+
+/* Responsive text scaling */
+@media (max-width: 768px) {
+  .certificates h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates h2 {
+    font-size: 1.3rem;
+  }
+  .certificate-card {
+    padding: 15px;
+  }
 }
